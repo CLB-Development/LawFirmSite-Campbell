@@ -20,10 +20,102 @@
             background-size: cover;
             padding: 10px 10px;
             text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: x-small;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column.middle {
+            width: 20%;
+            display: inline;
+        }
+        .column.left {
+            width: 20%;
+            display: inline;
+        }
+        .column.right {
+            width: 20%;
+            display: inline;
+        }
+        .column {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .column h2 {
+            text-align: center;
+        }
+        .column h3 {
+            text-align: center;
+            color: blue;
+        }
+        .column p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
     </style>
-<body>   
+<body>
+    <img src="TheLegalHeroes.png" width="1887" height="840">
+    <div class="row">
+        <div class="column left">
+            <h2><img src="{{url_for('static', filename='Logo.png')}}" width="1.5%"> | Commercial Services</h2>
+            <p>Our commercial practice provides the full range of advice required by business owners including:
+                <br><br>
+                - Business sale and acquisition
+                <br>
+                - Joint ventures
+                <br>
+                - Corporate structures
+                <br>
+                - Partnerships
+                <br>
+                - Capital raising and debt financing
+                <br>
+                - Business restructuring
+                <br>
+                - Shareholder agreements
+                <br>
+                - Start up and commercialisation
+                <br>
+                - Licensing and intellectual property protection</p>
+                <h3>Find Out More</h3>
+            <hr color="red">
+        </div>
+        <div class="column middle">
+            <h2><img src="{{url_for('static', filename='Logo.png')}}" width="1.5%"> | Property Services</h2>
+            <p>Our property practice covers the full range of residential, commercial and industrial property issues including:
+                <br><br>
+                - Commercial leases
+                <br>
+                - Commercial property sale and purchase
+                <br>
+                - Residential conveyancing
+                <br>
+                - Property finance
+                <br>
+                - Development and subdivisions
+                <br>
+                - Construction contracts</p>
+                <h3>Find Out More</h3>
+            <hr color="red">
+        </div>
+        <div class="column right">
+            <h2><img src="{{url_for('static', filename='Logo.png')}}" width="1.5%"> | Trust Management Services</h2>
+            <p>Our trusts and estates practice has a “whole of life” approach to wealth protection and succession including:
+                <br><br>
+                - Estate planning
+                <br>
+                - Family trusts
+                <br>
+                - Wills and powers of attorney
+                <br>
+                - Relationship property agreements
+                <br>
+                - Trust administration
+                <br>
+                - Estate administration</p>
+            <h3>Find Out More</h3>
+            <hr color="red">
+        </div>
+    </div>
 </body>
 </html>
