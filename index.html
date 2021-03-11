@@ -52,9 +52,44 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
         }
+        .team p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .team h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .member.one {
+            width: 45%;
+            float: left;
+            text-align: center;
+        }
+        .member.two {
+            width: 45%;
+            float: right;
+            text-align: center;
+        }
+        .member.one h3 {
+
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .member.two h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .member.one p2 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .member.two p2 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
     </style>
 <body>
-    <img src="TheLegalHeroes.png" width="1887" height="840">
+    <img src="{{url_for('static', filename='TheLegalHeroes.png')}}" width="1887" height="840">
     <div class="row">
         <div class="column left">
             <h2><img src="{{url_for('static', filename='Logo.png')}}" width="1.5%"> | Commercial Services</h2>
@@ -115,6 +150,28 @@
                 - Estate administration</p>
             <h3>Find Out More</h3>
             <hr color="red">
+        </div>
+    </div>
+    <div class="team">
+        <br>
+        <h1>About/Our Team</h1>
+        <br>
+        <p>
+            Having trustworthy lawyers is what we pride ourselves on. Everyone deserves to have an equal chance in life and our approach to law is no exception to this right. We began in 2015 working along side
+            the public to provide a better lawyer system that you can rely on. Its time to take away the stress of the court and focus on what really matters in your life. Our job is exactly what will help you 
+            achieve that.
+        </p>
+        <div class="team-members">
+            <div class="member one">
+                <p><img src="TMCampbell.png" width=45%></p>
+                <h3>Campbell Lythe-Brown</h3>
+                <p2>Head Director</p2>
+            </div>
+            <div class="member two">
+                <p><img src="TMRuby.png" width=45%></p>              
+                <h3>Ruby Roundhouse</h3>
+                <p2>Under-Head Director</p2>
+            </div>
         </div>
     </div>
 </body>
