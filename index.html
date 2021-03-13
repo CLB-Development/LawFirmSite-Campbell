@@ -21,21 +21,25 @@
             padding: 10px 10px;
             text-align: center;
         }
+        .footer {
+            overflow: hidden;
+            background-image: url("{{url_for('static', filename='Header.png')}}");
+            background-size: cover;
+            padding: 10px 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
-        .column.middle {
-            width: 20%;
-            display: inline;
-        }
         .column.left {
-            width: 20%;
+            width: 40%;
             display: inline;
         }
         .column.right {
-            width: 20%;
+            width: 40%;
             display: inline;
         }
         .column {
@@ -59,6 +63,11 @@
         .team h1 {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        .rowmember:after {
+            content: "";
+            display: table;
+            clear: both; 
         }
         .member.one {
             width: 45%;
@@ -89,7 +98,7 @@
         }
     </style>
 <body>
-    <img src="{{url_for('static', filename='TheLegalHeroes.png')}}" width="1887" height="840">
+    <img src="{{url_for('static', filename='Thpng')}}" width="1887" height="840">
     <div class="row">
         <div class="column left">
             <h2><img src="{{url_for('static', filename='Logo.png')}}" width="1.5%"> | Commercial Services</h2>
@@ -161,18 +170,27 @@
             the public to provide a better lawyer system that you can rely on. Its time to take away the stress of the court and focus on what really matters in your life. Our job is exactly what will help you 
             achieve that.
         </p>
-        <div class="team-members">
-            <div class="member one">
-                <p><img src="TMCampbell.png" width=45%></p>
-                <h3>Campbell Lythe-Brown</h3>
-                <p2>Head Director</p2>
-            </div>
-            <div class="member two">
-                <p><img src="TMRuby.png" width=45%></p>              
-                <h3>Ruby Roundhouse</h3>
-                <p2>Under-Head Director</p2>
+        <div class="rowmember">
+            <div class="team-members">
+                <div class="member one">
+                    <p><img src="{{url_for('static', filename='TMCampbell.png')}}" width=45%></p>
+                    <h3>Campbell Lythe-Brown</h3>
+                    <p2>Head Director</p2>
+                </div>
+                <div class="member two">
+                    <p><img src="{{url_for('static', filename='TMRuby.png')}}" width=45%></p>              
+                    <h3>Ruby Roundhouse</h3>
+                    <p2>Under-Head Director</p2>
+                </div>
             </div>
         </div>
+    </div>
+    <br><br>
+    <div class="footer">
+        <h2>Contact Information</h2>
+        <p>Phone Number: 0800 36 46 56</p>
+        <p>Email Address: services@legalheroes.com</p>
+        <p>Address: 83A Morbile Street, Rhoad Island</p>
     </div>
 </body>
 </html>
