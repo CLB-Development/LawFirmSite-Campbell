@@ -6,5 +6,5 @@ app = Flask(__name__)
 @app.route('/')
 
 def Logo():
-    return render_template("Logo.html")
+    return render_template("index.html")
 
